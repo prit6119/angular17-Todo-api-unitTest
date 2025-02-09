@@ -1,0 +1,36 @@
+<div class="p-40 my-6">
+    <h1>ToDo List</h1>
+
+    <input type="text" placeholder="Type your task" [(ngModel)]="newtask">
+    <button type="button" (click)="addNewTask()">Add</button>
+
+    <div>
+        <button type="button" (click)="filterBy='all'">All</button>
+        <button type="button" (click)="filterBy='complete'">Completed</button>
+        <button type="button" (click)="filterBy='pending'">Pending</button>
+    </div>
+
+    <table *ngIf="tasks.length">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of tasks | status:filterBy; let i=index">
+                <th>{{ i + 1 }}</th>
+                <th><span [ngClass]="data.completed ? 'greentext' : 'redtext'">{{ data.title }}</span></th>
+                <th>{{ data.completed ? 'Completed' : 'Pending' }}</th>
+                <th>
+                    <button type="button" (click)="deleteTask(data.id)">Delete</button>
+                    <button type="button" (click)="toggleTask(data.id,data.completed)">Toggle</button>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+
+    <p *ngIf="!tasks.length">No tasks available. Add a new task!</p>
+</div>

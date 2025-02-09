@@ -1,41 +1,27 @@
-Introduction
+# TodoPract
 
-This project demonstrates how to write unit tests for an Angular 17 Todo API using Jasmine and Karma. The unit tests ensure that the API functions correctly by verifying HTTP requests and responses for various Todo operations.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
 
-Technologies Used
+## Development server
 
-Angular 17
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Jasmine (Testing Framework)
+## Code scaffolding
 
-Karma (Test Runner)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-HttpClientTestingModule (for Mock HTTP Requests)
+## Build
 
-Setup Instructions
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-1. Clone the Repository
+## Running unit tests
 
-git clone https://github.com/your-repo/angular-todo-unit-test.git
-cd angular-todo-unit-test
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-2. Install Dependencies
+## Running end-to-end tests
 
-npm install
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-3. Run the Project
+## Further help
 
-Start the Angular application with:
-
-ng serve
-
-This will launch the project at http://localhost:4200/.
-
-4. Run Unit Tests
-
-Execute the following command to run all unit tests:
-
-ng test
-
-This will launch Karma and display the test results in the browser.
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
