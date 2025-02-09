@@ -23,7 +23,15 @@ cd angular-todo-unit-test
 
 npm install
 
-3. Run Unit Tests
+3. Run the Project
+
+Start the Angular application with:
+
+ng serve
+
+This will launch the project at http://localhost:4200/.
+
+4. Run Unit Tests
 
 Execute the following command to run all unit tests:
 
